@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>aileron-framework</artifactId>
+		<groupId>cc.aileron</groupId>
+		<version>2.5.0</version>
+	</parent>
+	<groupId>cc.aileron</groupId>
+	<artifactId>aileron-framework-wsgi-mobile</artifactId>
+	<version>2.5.0</version>
+	<name>aileron-framework-wsgi-mobile</name>
+	<dependencies>
+		<dependency>
+			<groupId>cc.aileron</groupId>
+			<artifactId>aileron-framework-wsgi-extension-template</artifactId>
+			<version>2.5.0</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.4</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>net.sourceforge.cssparser</groupId>
+			<artifactId>cssparser</artifactId>
+			<version>0.9.5</version>
+		</dependency>
+		<dependency>
+			<groupId>xalan</groupId>
+			<artifactId>xalan</artifactId>
+			<version>2.7.1</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sourceforge.nekohtml</groupId>
+			<artifactId>nekohtml</artifactId>
+			<version>1.9.14</version>
+		</dependency>
+		<dependency>
+			<groupId>cc.aileron</groupId>
+			<artifactId>aileron-framework-webclient</artifactId>
+			<version>2.5.0</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>

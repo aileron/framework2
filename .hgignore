@@ -1,0 +1,4 @@
+syntax: glob
+classes
+test-classes
+target

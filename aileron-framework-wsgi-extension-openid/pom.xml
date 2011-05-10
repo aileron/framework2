@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<parent>
+		<artifactId>aileron-framework</artifactId>
+		<groupId>cc.aileron</groupId>
+		<version>2.5.0</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>cc.aileron</groupId>
+	<artifactId>aileron-framework-wsgi-extension-openid</artifactId>
+	<name>aileron-framework-wsgi-extension-openid</name>
+	<version>${parent.version}</version>
+	<url>http://maven.apache.org</url>
+	<build>
+		<finalName>aileron-framework-wsgi-extension-openid</finalName>
+	</build>
+	<dependencies>
+
+			<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.openid4java</groupId>
+			<artifactId>openid4java-consumer</artifactId>
+			<version>0.9.5-SNAPSHOT</version>
+
+		</dependency>
+		<dependency>
+			<groupId>cc.aileron</groupId>
+			<artifactId>aileron-framework-wsgi</artifactId>
+			<version>${parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.htmlparser</groupId>
+			<artifactId>htmlparser</artifactId>
+			<version>1.6</version>
+		</dependency>
+	</dependencies>
+
+	<repositories>
+
+	<repository>
+        <id>openid4java</id>
+        <url>http://openid4java.googlecode.com/svn/maven-repo</url>
+        <snapshots>
+          <enabled>true</enabled>
+        </snapshots>
+     </repository>
+
+	</repositories>
+
+</project>

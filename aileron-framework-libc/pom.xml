@@ -1,0 +1,78 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>aileron-framework</artifactId>
+        <groupId>cc.aileron</groupId>
+        <version>2.5.0</version>
+    </parent>
+    <groupId>cc.aileron</groupId>
+    <artifactId>aileron-framework-libc</artifactId>
+    <name>aileron-framework-libc</name>
+    <version>2.5.0</version>
+
+
+    <properties>
+        <asm.version>3.2</asm.version>
+    </properties>
+
+
+    <dependencies>
+
+
+        <dependency>
+            <groupId>asm</groupId>
+            <artifactId>asm</artifactId>
+            <version>${asm.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>asm</groupId>
+            <artifactId>asm-commons</artifactId>
+            <version>${asm.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>asm</groupId>
+            <artifactId>asm-util</artifactId>
+            <version>${asm.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>asm</groupId>
+            <artifactId>asm-analysis</artifactId>
+            <version>${asm.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>asm</groupId>
+            <artifactId>asm-tree</artifactId>
+            <version>${asm.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+
+
+        <dependency>
+            <groupId>org.jruby.extras</groupId>
+            <artifactId>constantine</artifactId>
+            <version>0.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jruby.extras</groupId>
+            <artifactId>jffi</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jruby.extras</groupId>
+            <artifactId>jaffl</artifactId>
+            <version>0.5.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jruby.ext.posix</groupId>
+            <artifactId>jnr-posix</artifactId>
+            <version>1.1.6</version>
+        </dependency>
+    </dependencies>
+
+</project>

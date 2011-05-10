@@ -1,0 +1,115 @@
+
+body{width:100%;height:100%;font-size:x-small;background-color:#fff;}
+p{margin:0;padding:0;border:none;}
+img{margin:0;padding:0;border:none;}
+ul{margin:0;padding:0;border:none;}
+li{margin:0;padding:0;border:none;}
+hr{margin:0;padding:0;border:none;}
+form{margin:0;padding:0;border:none;}
+h1 {margin:0;padding:0;border:none;}
+input{margin:0;padding:0;}
+select{margin:0;padding:0;}
+option{margin:0;padding:0;}
+img{vertical-align:top;}
+a:link {color:#239be7;}
+a:visited{color:#2161d8;}
+a:hover{color:#FFF;text-decoration:none;}
+a:active{color:#FFF;}
+
+/* = ページ共通パーツ
+--------------------------------------------*/
+/*body指定用*/
+.bd{font-size:x-small;background-color:#fff;}
+/*掲載物件数、更新日*/
+.refData{background-color:#ebebeb;text-align:center;}
+/*マーキー定義*/
+.headMarq{display:-wap-marquee;-wap-marquee-style:scroll;color:#5c6a6d;background-color:#daf3f9;}
+.footMarq{display:-wap-marquee;-wap-marquee-style:scroll;color:#fff;background-color:#f9bf0d;}
+/*位置*/
+.centering{text-align:center;}
+.toHome{text-align:center;}
+.copyRight{text-align:center;}
+.myBukken{text-align:center;}
+.saveCondition{text-align:center;}
+.pagenation{text-align:center;}
+.aroundInfo{text-align:center;}
+.allInq{text-align:center;}
+.dtlHeading{text-align:center;}
+.inqCfm{text-align:center;}
+.flRight{text-align:right;}
+.toTop{text-align:right;}
+.prefChange{text-align:right;}
+
+/* = 背景色、フォントカラー
+--------------------------------------------*/
+.fMid{font-size:medium;}
+/*個別のフォントカラー指定*/
+.caution{color:#F33;}/*赤*/
+.subLead{color:#666;}
+/*濃いオレンジテキスト*/
+.keycolorFnt{color:#71580c;}
+.areaSlctHeading{color:#71580c;}
+.dtlHeading{color:#71580c;}
+/*淡いオレンジ背景色*/
+.areaSlctHeading{background-color:#fce28d;}
+.sortChange{background-color:#fce28d;}
+.allInq{background-color:#fce28d;}
+.dtlHeading{background-color:#fce28d;}
+.inqCfm{background-color:#fce28d;}
+/*オレンジ色リストの見出しと背景色*/
+.listHeadBgColor{background-color:#f9bf0d;color:#fff;}
+.listBgColor{background-color:#fff5d7;}
+/*境界線とか薄いグレーとか*/
+.grayHr{background-color:#dedede;}
+.toHome{background-color:#dedede;}
+.sitemapAreaHeading{background-color:#dedede;}
+.lightGray{background-color:#f3f3f3;}
+.orangeHr{background-color:#f9bf0d;}
+/*中見出し*/
+.midHeading{background-color:#f6dde8;}
+/*フッター*/
+.copyRight{color:#fff;background-color:#666;}
+.cpLink{color:#fff;background-color:#666;}
+/*お気に入り物件・最近見た物件*/
+.myBukken{background-color:#DFF8FF;}
+/*薄いグレー背景色*/
+.saveCondition{background-color:#ccc;}
+.pagenation{background-color:#ccc;}
+.aroundInfo{background-color:#ccc;}
+/*キーカラー*/
+.sitemapAreaTri{color:#ffc000;}
+.innerTri{color:#ffc000;}
+.fact{color:#9d2727;}
+/*ブタさまピンク*/
+.piggie{color:#e18b8a;}
+/*PR文言*/
+.prTxt{background-color:#FFE6E6;}
+.mansionInfo{background-color:#f9ecec;}
+
+/* = 全国トップ
+--------------------------------------------*/
+/*エリア選択*/
+.areaSHTri{color:#FFF;}
+/*サイトマップ*/
+.sitemapHeading{background-color:#06F;text-align:center;color:#FFF;}
+.sitemapAreaPartsBgColor{background-color:#f2f2f2;}
+
+/* = 都道府県トップ
+--------------------------------------------*/
+.kodawariHeading{background-color:#c5f883;text-align:center;}
+.kodawariBd{background-color:#f1f8e7;}
+
+/* = 検索条件
+--------------------------------------------*/
+
+/* = 物件一覧
+--------------------------------------------*/
+
+/* = 物件詳細
+--------------------------------------------*/
+
+/* = キャッシュバック
+--------------------------------------------*/
+.cbDcpBg{background-color:#edf9fb;}
+.cbChance{font-size:medium;color:#ff0000;}
+.cbFlowHeading{color:#217786;}

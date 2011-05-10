@@ -1,0 +1,23 @@
+<html>
+<head></head>
+<body>
+
+<!--#{rep *{aaa}="${'test'}"}--><input bbb="aaa" /><!--#-->
+
+<select>
+    <!--#{with category}-->
+    <!--#{each self%selectMap}-->
+        <!--#{def getValue !}-->
+        <option value=""><!--#{var key.name}#-->:<!--#{var value}#--></option>
+        <!--#-->
+        <!--#{def getValue}-->
+        <option value="" selected><!--#{var key.name}#-->:<!--#{var value}#--></option>
+        <!--#-->
+    <!--#-->
+    <!--#-->
+</select>
+
+<!--#{include part1.html}-->あいうえお<!--#-->
+
+</body>
+</html>

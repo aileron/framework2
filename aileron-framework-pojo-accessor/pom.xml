@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<parent>
+		<artifactId>aileron-framework</artifactId>
+		<groupId>cc.aileron</groupId>
+		<version>2.5.0</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>cc.aileron</groupId>
+	<artifactId>aileron-framework-pojo-accessor</artifactId>
+	<name>aileron-framework-pojo-accessor</name>
+	<version>${parent.version}</version>
+	<dependencies>
+		<dependency>
+			<groupId>cc.aileron</groupId>
+			<artifactId>aileron-framework-commons</artifactId>
+			<version>${parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>cc.aileron</groupId>
+			<artifactId>aileron-framework-test</artifactId>
+			<version>${parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>cc.aileron</groupId>
+			<artifactId>aileron-framework-generic</artifactId>
+			<version>${parent.version}</version>
+		</dependency>
+	</dependencies>
+</project>

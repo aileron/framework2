@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="true">
+
+<!--
+	<appender name="SYSTEM"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<Prudent>true</Prudent>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<FileNamePattern>logs/system.%d{yyyy-MM-dd}.log</FileNamePattern>
+			<MaxHistory>45</MaxHistory>
+		</rollingPolicy>
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>%msg%n</Pattern>
+		</layout>
+		<encoding>UTF-8</encoding>
+	</appender>
+ -->
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<Target>System.out</Target>
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</Pattern>
+		</layout>
+	</appender>
+
+	<logger name="jp.speee" level="trace">
+		<appender-ref ref="STDOUT" />
+	</logger>
+
+    <logger name="cc.aileron.wsgi" level="trace">
+        <appender-ref ref="STDOUT" />
+    </logger>
+
+
+
+
+</configuration>

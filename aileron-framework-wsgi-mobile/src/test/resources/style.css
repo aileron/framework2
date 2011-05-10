@@ -1,0 +1,67 @@
+/*
+ Copyright &copy; 2006-09 Aileron. All rights reserved.
+ */
+
+/*
+ background-image
+ */
+html
+{
+    background: silver url(/img/diagonals.gif);
+}
+
+/*
+centring
+ */
+body
+{
+    font-size: 10.5px;
+    text-align:center;
+}
+
+/**
+ page
+ */
+#page
+{
+    width       : 390px;
+    margin      : 0 auto;
+    text-align  : left;
+}
+
+/*
+contents
+*/
+div.contents
+{
+    margin          : 0px;
+    padding         : 3px;
+    font            : 10px;
+}
+li.contents h2
+{
+    border-top      : 1px dotted black;
+    margin-top      : 6px ;
+    font-weight     : normal;
+    font-size       : 10.5px;
+}
+div.contents h2
+{
+    font-weight     : normal;
+    font-size       : 10.5px;
+    padding         : 3px;
+    background-color: black;
+    color           : white;
+    margin-bottom   : 5px;
+}
+div.contents ul
+{
+    list-style-type : none;
+    margin  : 0;
+    padding : 0;
+}
+
+span.alert
+{
+    color : red ;
+}
