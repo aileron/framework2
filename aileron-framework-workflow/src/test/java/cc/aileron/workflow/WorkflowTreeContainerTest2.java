@@ -39,6 +39,20 @@ public class WorkflowTreeContainerTest2
         as(3, "/e_f_g/test", GET, "update");
         as(4, "/h_i_j/test", GET, "confirm");
 
+        t.put("/cachback/request", POST, 10);
+
+        t.put("/cachback/${unico}", POST, "setting-bank", 11);
+        t.put("/cachback/${unico}", POST, "setting-bank-branch", 12);
+        t.put("/cachback/${unico}", POST, "edit", 13);
+        t.put("/cachback/${unico}", POST, "confirm", 14);
+        t.put("/cachback/${unico}", POST, "complete", 15);
+
+        as(10, "/cachback/request", POST, "");
+        as(11, "/cachback/hogehoge", POST, "setting-bank");
+        as(12, "/cachback/hogehoge", POST, "setting-bank-branch");
+        as(13, "/cachback/hogehoge", POST, "edit");
+        as(14, "/cachback/hogehoge", POST, "confirm");
+        as(15, "/cachback/hogehoge", POST, "complete");
     }
 
     private void as(final int id, final String url,

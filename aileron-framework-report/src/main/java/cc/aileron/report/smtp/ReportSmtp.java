@@ -3,6 +3,7 @@ package cc.aileron.report.smtp;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.io.UnsupportedEncodingException;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map.Entry;
 import java.util.regex.Matcher;
@@ -156,6 +157,7 @@ public class ReportSmtp<T> implements Report<T>
         msg.addHeader("To", headers.remove("to"));
         try
         {
+            msg.setSentDate(new Date());
             msg.setSubject(MimeUtility.encodeText(headers.remove("Subject"),
                     "iso-2022-jp",
                     "B"));

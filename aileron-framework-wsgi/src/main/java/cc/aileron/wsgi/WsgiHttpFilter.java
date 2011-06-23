@@ -36,8 +36,9 @@ import org.slf4j.LoggerFactory;
 import cc.aileron.commons.resource.Resource;
 import cc.aileron.commons.resource.ResourceConvertUtils;
 import cc.aileron.commons.resource.ResourceLoaders;
-import cc.aileron.commons.resource.ResourceNotFoundException;
 import cc.aileron.commons.resource.ResourceLoaders.Type;
+import cc.aileron.commons.resource.ResourceNotFoundException;
+import cc.aileron.wsgi.context.WsgiContextProvider;
 import cc.aileron.wsgi.init.WsgiModel;
 
 /**
@@ -48,6 +49,7 @@ public class WsgiHttpFilter implements Filter
     @Override
     public void destroy()
     {
+        WsgiContextProvider.context(null);
     }
 
     @Override
